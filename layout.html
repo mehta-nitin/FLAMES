@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="C:\Users\Dell\Desktop\Projects\Question-Mark\Question_Mark\static\style.css">
+    <link rel="stylesheet" href="style.css">
     <style>
         .navbar-dark .navbar-nav .nav-item .nav-link:focus,
         .navbar-dark .navbar-nav .nav-item .nav-link:hover {
@@ -59,8 +59,8 @@
 
         <div class="collapse navbar-collapse flex-grow-0 ml-auto mr-2 mt-2" id="navbarSupportedContent">
             <ul class="nav navbar-nav navbar-right">
-                <!-- <li class="nav-item active">  
-                    <a class="nav-link" href={{ url_for("explore") }} title="Take a tour of our website!"><h1>Question Mark</h1></a>  
+                <!-- <li class="nav-item active">
+                    <a class="nav-link" href={{ url_for("explore") }} title="Take a tour of our website!"><h1>Question Mark</h1></a>
                 </li> -->
                 <li class="nav-item active">
                     <a class="nav-link" href={{ url_for("explore") }} title="Take a tour of our website!">
@@ -110,13 +110,13 @@
                         <button type="button" class="toggle-btn" onclick="login()">
                             Log In
                         </button>
-                        <button type="button" class="toggle-btn" onclick="register()">
+                        <button type="button" class="toggle-btn " onclick="register()">
                             Register
                         </button>
                     </div>
                     <form id="login" class="input-group">
-                        <input type="text" class="input-feild" placeholder="Email Id" required>
-                        <input type="text" class="input-feild" placeholder="Enter Password" required>
+                        <input type="text" class="input-feild email" placeholder="Email Id" required>
+                        <input type="text" class="input-feild pass" placeholder="Enter Password" required>
                         <input type="checkbox" class="check-box"><span>Remember Password</span>
                         <button type="submit" class="submit-btn">Log In</button>
                     </form>
